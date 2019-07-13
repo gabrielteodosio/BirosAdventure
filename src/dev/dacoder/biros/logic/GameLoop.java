@@ -18,14 +18,21 @@ public class GameLoop implements ActionListener {
     Entity player = GameLogic.getPlayer();
 
     if (Keyboard.isKeyDown(KeyEvent.VK_UP)) {
-      Utils.getPositionOnMap(player.getPosX(), player.getPosY() - 1);
-      GameLogic.getPlayer().updatePosition(0, -1);
+      if (Utils.canMoveTo(player, player.getPosX(), player.getPosY() - 1))
+        GameLogic.getPlayer().updatePosition(0, -1);
+
     } else if (Keyboard.isKeyDown(KeyEvent.VK_DOWN)) {
-      GameLogic.getPlayer().updatePosition(0, 1);
+      if (Utils.canMoveTo(player, player.getPosX(), player.getPosY() + 1))
+        GameLogic.getPlayer().updatePosition(0, 1);
+
     } else if (Keyboard.isKeyDown(KeyEvent.VK_LEFT)) {
-      GameLogic.getPlayer().updatePosition(-1, 0);
+      if (Utils.canMoveTo(player, player.getPosX() - 1, player.getPosY()))
+        GameLogic.getPlayer().updatePosition(-1, 0);
+
     } else if (Keyboard.isKeyDown(KeyEvent.VK_RIGHT)) {
-      GameLogic.getPlayer().updatePosition(1, 0);
+      if (Utils.canMoveTo(player, player.getPosX() + 1, player.getPosY()))
+        GameLogic.getPlayer().updatePosition(1, 0);
+
     }
   }
 }

@@ -15,7 +15,7 @@ public class GameLogic {
   public static void initialize() {
     Resources.readFiles();
 
-    player = new Entity("Gabriel Marques", '@', 2, 1, 10, 10, 0);
+    player = new Entity("Gabriel Marques", '@', 2, 1, 10, 10, 0, 100);
 
     timer = new Timer(1000 / FPS, new GameLoop());
     timer.start();
