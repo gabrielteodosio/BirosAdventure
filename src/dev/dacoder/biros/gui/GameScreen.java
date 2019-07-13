@@ -1,10 +1,14 @@
 package dev.dacoder.biros.gui;
 
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+import javax.swing.JPanel;
+
 import dev.dacoder.biros.utils.Keyboard;
 
-import javax.swing.*;
-import java.awt.*;
-
+@SuppressWarnings("serial")
 public class GameScreen extends JPanel {
 
   public GameScreen() {

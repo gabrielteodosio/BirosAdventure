@@ -1,9 +1,9 @@
 package dev.dacoder.biros.logic;
 
+import javax.swing.Timer;
+
 import dev.dacoder.biros.entities.Entity;
 import dev.dacoder.biros.utils.Resources;
-
-import javax.swing.*;
 
 public class GameLogic {
   private static Timer timer;

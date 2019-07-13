@@ -1,9 +1,10 @@
 package dev.dacoder.biros.gui;
 
-import dev.dacoder.biros.utils.Keyboard;
+import java.awt.Dimension;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JFrame;
+
+import dev.dacoder.biros.utils.Keyboard;
 
 public class Window {
 

@@ -1,10 +1,13 @@
 package dev.dacoder.biros.gui;
 
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+
 import dev.dacoder.biros.logic.GameConfig;
 import dev.dacoder.biros.logic.GameLogic;
 import dev.dacoder.biros.utils.Resources;
-
-import java.awt.*;
 
 public class Renderer {
 
